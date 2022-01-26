@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "Jobs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "All_Supervisory_Orgs": {
+      "type": "string"
+    },
+    "Brand_Name": {
+      "type": "string"
+    },
+    "Employee_Type": {
+      "type": "string"
+    },
+    "ISO2Char": {
+      "type": "string"
+    },
+    "Job_Description": {
+      "type": "string"
+    },
+    "Job_Description_Summary": {
+      "type": "string"
+    },
+    "External_Apply_URL": {
+      "type": "string"
+    },
+    "External_Posting_URL": {
+      "type": "string"
+    },
+    "Job_Profiles": {
+      "type": "string"
+    },
+    "Work_Shift": {
+      "type": "string"
+    },
+    "jobFamily": {
+      "type": "string"
+    },
+    "jobFamilyGroup": {
+      "type": "string"
+    },
+    "jobRequisitionId": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "string"
+    },
+    "timeType": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "workerSubType": {
+      "type": "string"
+    },
+    "Job_Requisition": {
+      "type": "string"
+    },
+    "Number_of_Openings_Available": {
+      "type": "string"
+    },
+    "RA_ESI_Brand": {
+      "type": "string"
+    },
+    "Scheduled_Weekly_Hours": {
+      "type": "string"
+    },
+    "locationCountry": {
+      "type": "string"
+    },
+    "locations": {
+      "type": "string"
+    },
+    "endDate": {
+      "type": "string"
+    },
+    "applications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::application.application",
+      "mappedBy": "job"
+    }
+  }
+}
